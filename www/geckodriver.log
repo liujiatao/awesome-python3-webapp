@@ -918,3 +918,15 @@ firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1001.
 1481254616476	geckodriver::marionette	INFO	Connecting to Marionette on localhost:44868
 Xlib:  extension "RANDR" missing on display ":1003".
 firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1003.
+1481508009379	geckodriver	INFO	Listening on 127.0.0.1:55539
+1481508009382	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.fIzby9x99UCG
+1481508009382	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1481508009384	geckodriver::marionette	INFO	Connecting to Marionette on localhost:44869
+Xlib:  extension "RANDR" missing on display ":1001".
+firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1001.
+1481508011439	geckodriver	INFO	Listening on 127.0.0.1:35524
+1481508012436	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.u4exp2TwLgCt
+1481508012436	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1481508012438	geckodriver::marionette	INFO	Connecting to Marionette on localhost:41105
+Xlib:  extension "RANDR" missing on display ":1003".
+firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :1003.

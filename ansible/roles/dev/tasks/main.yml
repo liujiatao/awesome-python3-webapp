@@ -1,0 +1,17 @@
+- name: checkout code
+  git:
+    repo: "{{git_repo_checkout}}"
+    dest: "{{local_code_path}}"
+
+- name: install docker
+  yum:
+    name: docker
+    state: present
+
+- name: enable docker service
+  shell: systemctl enable docker.service
+
+- name: start docker daemon
+  shell: systemctl start docker
+
+

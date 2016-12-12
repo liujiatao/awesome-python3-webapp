@@ -1,0 +1,5 @@
+---
+
+[test]
+10.100.199.200
+#host1 ansible_ssh_user=vagrant ansible_ssh_pass=vagrant host_key_checking=False

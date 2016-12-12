@@ -1,0 +1,9 @@
+---
+ansible_ssh_pass: vagrant
+mysql_port: 3306
+dbname: demo
+upassword: demo
+dbuser: admin
+mysqlservice: mysqld
+git_repo_checkout: https://github.com/liujiatao/awesome-python3-webapp.git
+local_code_path: /srv/checkout

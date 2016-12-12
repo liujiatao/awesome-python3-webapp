@@ -1,0 +1,42 @@
+---
+# This playbook contains common plays that will be run on all nodes.
+
+- name: install development group
+  yum:
+    name: "@development"
+    state: present
+
+- name: install python3.5
+  yum:
+    name: "python35u-3.5.2"
+    state: present
+
+- name: install python3.5 pip
+  yum:
+    name: "python35u-pip"
+    state: present
+
+- name: install aiohttp
+  shell: pip3.5 install aiohttp jinja2 aiomysql
+
+
+
+#- name: Install ntp
+#  yum: name=ntp state=present
+#  tags: ntp
+
+- name: Install common dependencies
+  yum: name={{ item }} state=installed
+  with_items:
+   - libselinux-python
+   - libsemanage-python
+   - firewalld
+
+#- name: Configure ntp file
+#  template: src=ntp.conf.j2 dest=/etc/ntp.conf
+#  tags: ntp
+#  notify: restart ntp
+
+#- name: Start the ntp service
+#  service: name=ntpd state=started enabled=yes
+#  tags: ntp
