@@ -74,7 +74,7 @@ config.vm.synced_folder ".", "/vagrant"
   #config.vm.provision "shell", inline: "tar -xf /vagrant/ansible.tar"
   config.vm.provision "shell", inline: "ansible-playbook -i /vagrant/ansible/hosts /vagrant/ansible/site.yml -c local"
   
-  config.vbguest.auto_update = false
+ # config.vbguest.auto_update = false
   if Vagrant.has_plugin?("vagrant-cachier")
     config.cache.scope = :box
   end
