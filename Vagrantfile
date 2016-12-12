@@ -71,9 +71,10 @@ config.vm.synced_folder ".", "/vagrant"
   config.vm.provision "shell", inline: "service sshd restart"
   config.vm.provision "shell", inline: "yum -y install https://centos7.iuscommunity.org/ius-release.rpm"
   config.vm.provision "shell", inline: "yum -y install ansible"
-  config.vm.provision "shell", inline: "tar -xf /vagrant/ansible.tar"
+  #config.vm.provision "shell", inline: "tar -xf /vagrant/ansible.tar"
   config.vm.provision "shell", inline: "ansible-playbook -i hosts site.yml -c local"
   
+  config.vbguest.auto_update = false
   if Vagrant.has_plugin?("vagrant-cachier")
     config.cache.scope = :box
   end
