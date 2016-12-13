@@ -14,4 +14,4 @@ The packages includes vagrant, ansilbe, docker, kubernetes yamls and awesome-pyt
 2. git clone https://github.com/liujiatao/awesome-python3-webapp
 3. cd /awesome-python3-webapp and vagrant up (ansible configuration)
 4. vagrant ssh
-5. python3.5 ./www/app.py or python3.5 ./www/app_test.py
+5. python3.5 /vagrant/www/app.py or python3.5 /vagrant/www/app_test.py

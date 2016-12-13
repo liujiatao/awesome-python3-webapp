@@ -26,7 +26,7 @@ class DevOps4Python(unittest.TestCase):
     # automation test in web browser 
     def test_mainpage_in_python(self):
         driver = self.driver
-        driver.get("http://127.0.0.1:9000")
+        driver.get("http://15.107.7.33:9000")
         self.assertIn("日志", driver.title)
         assert "No results found." not in driver.page_source
         body = self.driver.find_element_by_css_selector('body')        
@@ -36,7 +36,7 @@ class DevOps4Python(unittest.TestCase):
     # automation test in restful 
     def test_restful_users_in_python(self):
         driver = self.driver
-        driver.get("http://127.0.0.1:9000/api/users")
+        driver.get("http://15.107.7.33:9000/api/users")
         assert "404: Not Found" not in driver.page_source
         body = self.driver.find_element_by_css_selector('body')
         driver.save_screenshot('api-users.png')

@@ -23,7 +23,7 @@ async def orm_test(loop):
 	await orm.create_pool(loop=loop, user='www-data', password='Xiao_yu0922', db='awesome')
 
 	from models import User
-	u = User(name='Test2', email='test2@example.com', passwd='1234567890', image='about:blank')
+	u = User(name='Test3', email='test3@example.com', passwd='1234567890', image='about:blank')
 
 	await u.save()
 
