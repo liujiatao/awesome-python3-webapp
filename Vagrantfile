@@ -78,6 +78,7 @@ config.vm.synced_folder ".", "/vagrant"
   if Vagrant.has_plugin?("vagrant-cachier")
     config.cache.scope = :box
   end
+ # the proxy is used for my company env 
   if Vagrant.has_plugin?("vagrant-proxyconf")
     config.proxy.http     = "http://web-proxy.corp.hp.com:8080"
     config.proxy.https    = "http://web-proxy.corp.hp.com:8080/"
