@@ -31,3 +31,10 @@
   roles:
     - dev
 
+- name: configure and deploy the qa tools
+  hosts: test
+  remote_user: root
+
+  roles:
+    - qa
+
